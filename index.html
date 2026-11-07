@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Meine Projekte</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#22352c;--card:#18261f;--kreide:#ece8da;--dim:#a7b3a5;--gelb:#f2cf63;--pink:#ee6aa6}
+  *{box-sizing:border-box}
+  body{margin:0;min-height:100vh;background:var(--bg);color:var(--kreide);font:20px/1.25 'VT323','Courier New',monospace;padding:40px 16px}
+  .wrap{max-width:900px;margin:0 auto}
+  h1{font:400 clamp(20px,4vw,32px)/1.2 'Press Start 2P','Courier New',monospace;margin:0 0 8px}
+  h1 b{color:var(--pink);font-weight:400}
+  .sub{color:var(--dim);margin:0 0 32px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+  a.tile{display:flex;flex-direction:column;gap:10px;padding:22px;background:var(--card);border:3px solid #3b5547;color:inherit;text-decoration:none;box-shadow:4px 4px 0 #0b120e;transition:transform .15s,border-color .15s}
+  a.tile:hover,a.tile:focus-visible{transform:translate(-2px,-2px);border-color:var(--gelb);outline:none}
+  .icon{font-size:44px;line-height:1}
+  .tile h2{font:400 15px/1.3 'Press Start 2P','Courier New',monospace;margin:0;color:var(--gelb)}
+  .tile p{margin:0;color:var(--dim)}
+  .go{margin-top:auto;color:var(--pink)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>MEINE <b>PROJEKTE</b></h1>
+  <p class="sub">Spiele und Werkzeuge zum Ausprobieren.</p>
+
+  <div class="grid">
+    <!-- KACHEL 1: Chemystery -->
+    <a class="tile" href="./Chemystery-Claude/">
+      <span class="icon">🧪</span>
+      <h2>CHEMYSTERY</h2>
+      <p>Pixel-Adventure: Chemielehrer Florian sucht alles für die Elefantenzahnpasta zusammen.</p>
+      <span class="go">Spielen ▸</span>
+    </a>
+
+    <!-- KACHEL 2: HIER ANPASSEN -->
+    <!-- "NAME-DES-ZWEITEN-REPOS" durch den genauen Repo-Namen ersetzen, Titel und Text anpassen -->
+    <a class="tile" href="./NAME-DES-ZWEITEN-REPOS/">
+      <span class="icon">🎛️</span>
+      <h2>PROJEKT 2</h2>
+      <p>Kurze Beschreibung des zweiten Projekts.</p>
+      <span class="go">Öffnen ▸</span>
+    </a>
+  </div>
+</div>
+</body>
+</html>
